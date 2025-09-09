@@ -73,6 +73,13 @@ fun main() {
 //    print(rm.toString().reversed())
 
     // задача 4
+    print("Введите два числа и оператор без пробелов: ")
+    var arr = readln().toCharArray(3)
+    val op = arr[1]
+
+
+
+
 
 
 }
