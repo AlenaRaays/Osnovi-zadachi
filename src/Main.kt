@@ -59,18 +59,20 @@ fun main() {
 //    otpt.append(amo)
 //    println(otpt.toString())
 
-    //задача 3
+//    //задача 3
+//
+//    print("Введите число (в 10-ой системе счисления: ")
+//    var num = readln().toInt()
+//    var rm = StringBuilder()
+//
+//    while (num.toDouble() / 2 != 0.0){
+//        rm.append(num % 2)
+//        num /= 2
+//    }
+//
+//    print(rm.toString().reversed())
 
-    print("Введите число (в 10-ой системе счисления: ")
-    var num = readln().toInt()
-    var rm = StringBuilder()
-
-    while (num.toDouble() / 2 != 0.0){
-        rm.append(num % 2)
-        num /= 2
-    }
-
-    print(rm.toString().reversed())
+    // задача 4
 
 
 }
