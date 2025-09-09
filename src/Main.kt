@@ -63,17 +63,14 @@ fun main() {
 
     print("Введите число (в 10-ой системе счисления: ")
     var num = readln().toInt()
-    var i = 0
-    var near = 2;
-    var res : Double
+    var rm = StringBuilder()
 
-    while (near.toDouble().pow(i + 1).toInt() > num) {
-        res = near.toDouble().pow(i)
-        if (near.toDouble().pow(i + 1).toInt() < num && near.toDouble().pow(i + 1).toInt() > res) {
-            i++
-        }
-        println(res)
+    while (num.toDouble() / 2 != 0.0){
+        rm.append(num % 2)
+        num /= 2
     }
+
+    print(rm.toString().reversed())
 
 
 }
