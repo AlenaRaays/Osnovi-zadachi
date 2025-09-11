@@ -73,14 +73,23 @@ fun main() {
 //    print(rm.toString().reversed())
 
     // задача 4
-    print("Введите два числа и оператор без пробелов: ")
-    var arr = readln().toCharArray(3)
-    val op = arr[1]
+    print("Введите два числа и оператор (+, -, /, *) : ")
+    val input = readln()
+    val parts = input.split(" ")
 
+    val number1 = parts[0].toDouble()
+    val number2 = parts[1].toDouble()
+    val operation = parts[2]
 
+    val result = when (operation) {
+        "+" -> number1 + number2
+        "-" -> number1 - number2
+        "*" -> number1 * number2
+        "/" -> if (number2 != 0.0) number1 / number2 else "Ошибка: деление на ноль."
+        else -> "Ошибка: неизвестная операция."
 
+    }
 
-
-
+    println("Результат: $result")
 }
 
