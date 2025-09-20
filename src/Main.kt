@@ -93,6 +93,62 @@ fun main() {
 //    println("Результат: $result")
 
 
+//    //задание 5
+//
+//    println("Введите целое число n и основание степени x (например: 27 3):")
+//    val input = readln()
+//    val parts = input.split(" ")
+//
+//    val n = parts[0].toInt()
+//    val x = parts[1].toInt()
+//
+//    var y = 0
+//    var power = 1 // x^0 = 1
+//
+//    while (power < n) {
+//        y++
+//        power = Math.pow(x.toDouble(), y.toDouble()).toInt()
+//    }
+//
+//    if (power == n) {
+//        println("Целочисленный показатель степени y: $y")
+//    } else {
+//        println("Целочисленный показатель не существует.")
+//    }
+
+    //6 задание
+
+
+    println("Введите первую цифру:")
+    val firstDigit = readln().trim()
+
+    println("Введите вторую цифру:")
+    val secondDigit = readln().trim()
+
+    val digit1 = firstDigit[0] //из строки в символ
+    val digit2 = secondDigit[0] //
+
+    val check = if (digit1.toString().toInt() % 2 != 0){
+        digit1 //условие вернуло переменную
+    }
+    else if (digit2.toString().toInt() % 2 != 0) {
+        digit2
+    }
+    else null
+
+    if (check != null) {
+        // Создаем нечетное число
+        val otherDigit = if (check == digit1) {
+            digit2
+        } else digit1
+        val oddNumber1 = "$otherDigit$check"
+
+
+        println("Созданные нечетные числа: $oddNumber1")
+    } else {
+        println("Создать нечетное число невозможно.")
+    }
+
 
 }
 
